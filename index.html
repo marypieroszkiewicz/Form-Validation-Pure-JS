@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+
+        <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=latin-ext" rel="stylesheet"> 
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="form__container">
+            <form id="myForm" class="form" method="post" action="action="https://httpbin.org/post"">
+                <div class="form__content">
+                    <div class="inputs__content">
+                        <label class="required__star" for="full_name">Full name</label>
+                        <input type="text" name="full_name" id="name" required data-error="Write your Full name">
+                    </div>
+                    <div class="inputs__content">
+                        <label class="required__star" for="company">Company</label>
+                        <input type="text" name="company" id="company" required data-error="write you Company">
+                    </div>
+                    <div class="inputs__content">
+                        <label class="required__star" for="email">Email</label>
+                        <input type="email" name="email" id="email" required data-error="Write your email">
+                    </div>
+                    <div class="inputs__content">
+                        <label for="phone">Phone number</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                </div>
+                <button type="submit" class="button">Submit data</button>
+            </form>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
