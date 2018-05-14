@@ -19,15 +19,15 @@
                 <div class="form__content">
                     <div class="inputs__content">
                         <label class="required__star" for="full_name">Full name</label>
-                        <input type="text" name="full_name" id="name" required data-error="Write your Full name">
+                        <input type="text" name="full_name" id="name" required data-error="Write your Full name" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
                     </div>
                     <div class="inputs__content">
                         <label class="required__star" for="company">Company</label>
-                        <input type="text" name="company" id="company" required data-error="write you Company">
+                        <input type="text" name="company" id="company" required data-error="Write you Company">
                     </div>
                     <div class="inputs__content">
                         <label class="required__star" for="email">Email</label>
-                        <input type="email" name="email" id="email" required data-error="Write your email">
+                        <input type="email" name="email" id="email" required data-error="Write your email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
                     </div>
                     <div class="inputs__content">
                         <label for="phone">Phone number</label>
