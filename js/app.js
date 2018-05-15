@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 	const form = document.querySelector('#myForm');
-	const inputs = form.querySelectorAll('input[required]');
+	const inputs = form.querySelectorAll('input, input[required]');
 
 	form.setAttribute('novalidate', true);
 
@@ -139,6 +139,8 @@ document.addEventListener("DOMContentLoaded", function() {
       			document.querySelector('.popup-close').addEventListener('click', function() {
         			this.parentElement.remove();
       			});
+
+            [...inputs].forEach(el => el.value = '');
     		});
     	}
 	});
